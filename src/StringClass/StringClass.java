@@ -47,7 +47,7 @@ public class StringClass {
         System.out.println("借助Arrays输出数组：" + Arrays.toString(cc));
 
 
-        //contains(String) 字符串中是否包含子串
+        //contains(String s) 字符串中是否包含子串
         System.out.println("contains()：" + s1.contains("b"));  // True
 
 
@@ -59,6 +59,11 @@ public class StringClass {
         //valueOf()是静态方法，可以通过类直接调用
         System.out.println("valueOf()：" + String.valueOf(ch1));  // hello runoob
         //实际上valueOf(Object O)函数不仅能将(字符数组)变为字符串，其它数据类型也可以，除了非字符数组
+
+        //另外，更简单的将单个字符转换为字符串的方法可以使用加法拼接一个空字符串
+        char c2 = s1.charAt(1);
+        String Str3 = c2 + "";
+        System.out.println(Str3);
 
 
         //equals(Object anObject)  String中 == 比较引用地址是否相同，equals()比较字符串的内容是否相同

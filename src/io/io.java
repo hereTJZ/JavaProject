@@ -36,7 +36,7 @@ public class io {
 //        //如果要读取带空格的一串字符串还是需要使用nextLine()
 //        System.out.println("4、请在同一行输入带空格的任意一串字符串（一次性读入）：");
 //        /**
-//         * next()、nextDouble()、nextFloat()、nextInt()、nextBigDecimal()等不读取任何空格、tab或换行符，且读取到有一个效数据前都能跳过他们读取，会一直读取到有效数据直到空格或换行符之前，
+//         * next()、nextDouble()、nextFloat()、nextInt()、nextBigDecimal()等不读取任何空格、tab或换行符（回车键），且读取到有一个效数据前都能跳过他们读取，会一直读取到有效数据直到空格或换行符之前，
 //         * 其实每行末尾面还有一个回车未读取出来，若此时后面跟上一个nextLine()读取的是该回车，导致nextLine()读不到数据。
 //         * 所以，next()、nextDouble()、nextFloat()、nextInt()、nextBigDecimal()等后面邻接的一个nextLine()是无效的，因此可直接加一个in.nextLine()来消除回车
 //         */
