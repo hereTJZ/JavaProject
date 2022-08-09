@@ -107,8 +107,8 @@ public class BigDecimalClass {
          * 关于取舍模式的枚举类型 RoundingMode 的介绍：
          *  0、RoundingMode.UP：不管正数负数，小数部分进位（向0远离）
          *  1、RoundingMode.DOWN：不管正数负数，直接去掉小数部分（向0靠近）
-         *  2、RoundingMode.CEILING：向上取整（注意负数的情况）
-         *  3、RoundingMode.FLOOR：向下取整（注意负数的情况）
+         *  2、RoundingMode.CEILING：向上取整，进位（注意负数的情况）
+         *  3、RoundingMode.FLOOR：向下取整，退位（注意负数的情况）
          *  4、RoundingMode.HALF_UP：四舍五入
          *  5、RoundingMode.HALF_DOWN：五舍六入
          *  6、RoundingMode.HALF_EVEN：四舍六入，五向偶数

@@ -2,7 +2,8 @@ package ToolsClass;
 
 public class IntegerClass {
     public static void main(String[] args) {
-        //二进制在java中一般用字符串String表示
+        //非十进制数在java中一般用字符串String表示
+
         int decimal = 123;
 
         //十进制转二进制字符串

@@ -4,15 +4,17 @@ import java.util.*;
 
 public class test {
     public static void main(String[] args) {
-        System.out.println(Math.sqrt(64577));
-        Map<Integer,Integer> hashMap = new HashMap<Integer,Integer>();
-
+        int[] a = new int[2];
+        a[0] = 2;
+        System.out.println(a[0]);
+        abn(a);
+        System.out.println(a[0]);
 
     }
 
-    public void abn(){
-        System.out.println("非static方法，实例化内部类~");
-        ListNode a = new ListNode(20);
+    public static void abn(int[] a){
+        int[] b = new int[a.length];
+        b[0] = 0;
     }
 }
 

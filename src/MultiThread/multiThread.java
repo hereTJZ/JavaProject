@@ -13,7 +13,6 @@ package MultiThread;
  */
 
 
-
 /** ①
  * 继承 Thread 类，作为线程的实现类（其实Thread本身就是实现Runnable接口而来的类）
  * 现实中可以直接使用Thread类也可以继承使用，但最好是继承使用，可以自定义需求的多线程
@@ -66,7 +65,6 @@ class Mythread2 implements Runnable {
 }
 
 
-
 public class multiThread {
     public static void main(String[] args) {
 
@@ -80,6 +78,4 @@ public class multiThread {
         Mythread2 T3 = new Mythread2("T3");
         T3.run();
     }
-
-
 }

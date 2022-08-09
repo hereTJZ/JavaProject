@@ -1,5 +1,32 @@
 package ToolsClass;
 
+/**
+ * 枚举类，一种特殊的类
+ */
+enum Weekday {
+    // 每一个枚举常量相当于调用‘构造函数’创建了全局唯一的 静态实例
+    // public static final Weekday SUN = new Weekday();
+    MON(1, "星期一"),
+    TUE(2, "星期二"),
+    WED(3, "星期三"),
+    THU(4, "星期四"),
+    FRI(5, "星期五"),
+    SAT(6, "星期六"),
+    SUN(0, "星期日");
+
+    // 枚举类成员变量
+    public int dayValue;
+    public String name;
+
+    // 枚举类构造方法
+    Weekday(int i, String chinese) {
+        dayValue = i;
+        name = chinese;
+    }
+}
+
+
+
 public class EmunClass {
     public static void main(String[] args) {
 
@@ -24,30 +51,5 @@ public class EmunClass {
                 break;
         }
 
-    }
-
-    /**
-     * 枚举类，一种特殊的类
-     */
-    enum Weekday {
-        // 每一个枚举常量相当于调用‘构造函数’创建了全局唯一的 静态实例
-        // public static final Weekday SUN = new Weekday();
-        MON(1, "星期一"),
-        TUE(2, "星期二"),
-        WED(3, "星期三"),
-        THU(4, "星期四"),
-        FRI(5, "星期五"),
-        SAT(6, "星期六"),
-        SUN(0, "星期日");
-
-        // 枚举类成员变量
-        public int dayValue;
-        public String name;
-
-        // 枚举类构造方法
-        Weekday(int i, String chinese) {
-            dayValue = i;
-            name = chinese;
-        }
     }
 }

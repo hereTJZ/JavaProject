@@ -32,7 +32,7 @@ public class StringClass {
         System.out.println("charAt()：" + s1.charAt(1));  // b
 
 
-        //concat(Stirng s) 字符串拼接，一般直接使用 + 也行
+        //concat(Stirng s) 字符串拼接，较少用，一般直接使用 + 也行
         System.out.println("concat()：" + s1.concat(s4));  // abcdef
 
 
@@ -54,7 +54,6 @@ public class StringClass {
         //valueOf(Char[] c)或valueOf(Char[] c, int offset, int long)  将字符数组（或某部分）转换为已实例化的字符串
         //valueOf()和toString()方法差不多，但value是String类专有的转换为字符串的方法
         char[] ch1 = {'h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'};
-        String Str2 = "";
         System.out.println("valueOf()：" + String.valueOf(ch1, 1, 3));  // ell
         //valueOf()是静态方法，可以通过类直接调用
         System.out.println("valueOf()：" + String.valueOf(ch1));  // hello runoob
@@ -62,8 +61,8 @@ public class StringClass {
 
         //另外，更简单的将单个字符转换为字符串的方法可以使用加法拼接一个空字符串
         char c2 = s1.charAt(1);
-        String Str3 = c2 + "";
-        System.out.println(Str3);
+        String Str2 = c2 + "";
+        System.out.println(Str2);
 
 
         //equals(Object anObject)  String中 == 比较引用地址是否相同，equals()比较字符串的内容是否相同
@@ -89,7 +88,7 @@ public class StringClass {
         System.out.println(s5.lastIndexOf("ab", 2));  //0
 
 
-        //replace(char old, char new) 将字符串中的 old '字符' 全部替换为new
+        //replace(char old, char new) 将  字符串中的 old '字符' 全部替换为new
         System.out.println("replace()：" + s5.replace('b', '!'));  //a!ca!acd
 
         //replaceAll(String regex, String new)  正则表达式匹配字符串，匹配到的 '字符串' 结果全部替换为new
@@ -111,7 +110,7 @@ public class StringClass {
         System.out.println("       length：" + ss.length);  //字符串被划分成了3个部分
 
 
-        //substring(int begin)  提取字符串中 指定头索引的 子字符串
+        //substring(int begin)  提取字符串中 指定头索引之后的 子字符串
         System.out.println("substring(int begin)：" + s6.substring(15));  //you and her
         //substring(int begin, int end)  提取字符串中 指定索引区间的 子字符串（包首不包尾！！！）
         System.out.println("substring(int begin, int end)：" + s6.substring(2, 6));  //love

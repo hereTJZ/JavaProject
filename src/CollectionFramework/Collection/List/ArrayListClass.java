@@ -44,6 +44,9 @@ public class ArrayListClass {
         list2.addAll(2, list1);
         System.out.println("addAll()：" + list2);  // [1, 呵呵, 1, 呵呵, 1.2, 哈哈, 1.2, 哈哈]
 
+        // size()：获取List的大小
+        System.out.println("size()：" + list2.size());  // 8
+
 
         // set(int i, Object o)：修改某位置的元素
         list1.set(3,"hhh");
@@ -52,6 +55,27 @@ public class ArrayListClass {
 
         // get(int i)：获取指定索引值中的元素
         System.out.println("get(int i)：" + list1.get(3)); // hhh
+
+
+        // indexOf(Object o)：查找List中某元素的索引值，从前往后查找
+        System.out.println("indexOf(Object o)：" + list1.indexOf("hhh")); // 3
+        // lastIndexOf(Object o)：查找List中某元素最后一次出现的索引值，或者说是从后往前查找
+        list1.add("hhh");
+        System.out.println("lastIndexOf(Object o)：" + list1.lastIndexOf("hhh")); // 4
+
+
+        // remove()：删除List里的单个元素：可以根据索引，也可以根据该元素值(仅删除查找到的第一个)
+        list1.remove(1);
+        System.out.println("remove(int i)：" + list1); // [1, 1.2, hhh, hhh]
+        list1.remove("hhh");
+        System.out.println("remove(Object o)：" + list1); // [1, 1.2, hhh]
+
+        // removeAll(Collection c)：删除存在于List中指定集合的元素
+        list2.removeAll(list1);
+        System.out.println("removeAll(Collection c)：" + list2); // [呵呵, 呵呵, 哈哈, 哈哈]
+
+
+        // contains()：
 
 
 
