@@ -130,6 +130,14 @@ public class StringClass {
 
         List<String> stooges = Arrays.asList("Larry", "Moe", "Curly");
         System.out.println(stooges.getClass());
+        
+        
+        //intern()  返回字符串对象的规范化表示形式，如果字符串在字符串常量池中存在对应字面量，则intern()方法返回该字面量的地址；如果不存在，则创建一个对应的字面量，并返回该字面量的地址
+        String s8 = new String("字符串");
+        String s9 = "字符串";
+        System.out.println(s8 == s8.intern());  //false
+        System.out.println(s9 == s9.intern());  //true
+        System.out.println(s8.intern() == s9.intern());  //true
 
     }
 }
