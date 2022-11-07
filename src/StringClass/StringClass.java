@@ -47,6 +47,10 @@ public class StringClass {
         System.out.println("借助Arrays输出数组：" + Arrays.toString(cc));
 
 
+        //startsWith(String s) 字符串是否以s开头
+        System.out.println("startsWith()：" + s1.startsWith("ab"));
+        //endsWith(String s) 字符串是否以s结尾
+        System.out.println("endsWith()：" + s1.endsWith("bc"));
         //contains(String s) 字符串中是否包含子串
         System.out.println("contains()：" + s1.contains("b"));  // True
 
