@@ -1,3 +1,5 @@
+package DataStructure;
+
 public class BasicDataType {
     public static void main(String[] args) {
         /**
