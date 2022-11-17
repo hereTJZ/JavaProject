@@ -2,10 +2,17 @@ package ToolsClass;
 
 public class IntegerClass {
     public static void main(String[] args) {
-        //非十进制数在java中一般用字符串String表示
+        Integer v1 = 10;
+        Integer v2 = 10;
+        // Integer比较特殊，v1 和 v2 是同一个引用，指向同一个对象！！！
+        System.out.println(v1 == v2); // true
+        Integer v3 = new Integer(10);
+        System.out.println(v1 == v3);// false
+        // 包装类数值比较应该使用equals()
+        System.out.println(v1.equals(v3)); // true
 
+        
         int decimal = 123;
-
         //十进制转二进制字符串
         String binary  = Integer.toBinaryString(decimal);
         System.out.println("2进制字符串：" + binary);
@@ -23,7 +30,6 @@ public class IntegerClass {
         System.out.println("2进制的字符转换为十进制整数：" + decimal);
         System.out.println("8进制的字符转换为十进制整数：" + Integer.parseInt(octal, 8));
         System.out.println("16进制的字符转换为十进制整数：" + Integer.parseInt(hex, 16));
-
 
     }
 }
